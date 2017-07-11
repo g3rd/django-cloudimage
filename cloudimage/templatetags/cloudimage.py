@@ -13,6 +13,9 @@ def image(img, operation, size, optional_parameters):
             raise ValueError('No image path defined')
         return ''
 
+    if img.startswith('/'):
+        img = img[1:]
+
     return reverse('cloudimage_image', kwargs={
         'operation': operation,
         'size': size,
