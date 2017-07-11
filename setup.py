@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from distutils.core import setup
 from setuptools import find_packages
-from rszio import version
+from cloudimage import version
 
 try:
     from pypandoc import convert
