@@ -24,8 +24,6 @@ def image_view(request, operation=None, size=None, optional_parameters=None, pat
         path=path,
     )
 
-    print(url)
-
     # Grab the image
     cloudimage_response = requests.get(url)
 
